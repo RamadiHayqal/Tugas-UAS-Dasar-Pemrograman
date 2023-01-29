@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main() {
   int pilihan,total_Menu,banyak,hasil=0;
   char pilihan_Menu,yesNo;
   int diskon = 10;
@@ -13,11 +13,11 @@ int main(){
   cout << "2. DIMSUM" << endl;
   cout << "3. BEVERAGE" << endl;
 
- do{
+ do {
   cout << "Masukan Menu Yang Di Pilih : ";
   cin >> pilihan;
 
-  switch(pilihan){
+ switch(pilihan) {
    case 1:
     cout << "Menu NOODLE" << endl;
     cout << "A. Mie Angel        : Rp.13.000" << endl;
@@ -27,7 +27,7 @@ int main(){
     cout << "Masukkan Pilihan Menu : ";
     cin >> pilihan_Menu;
 
-    if(pilihan_Menu == 'a' || pilihan_Menu == 'A'){
+    if(pilihan_Menu == 'a' || pilihan_Menu == 'A') {
               total_Menu = 13000;
     } else if(pilihan_Menu == 'b' || pilihan_Menu == 'B'){
               total_Menu = 15000;
@@ -112,7 +112,7 @@ int main(){
  cout << "Rincian : " << endl;
 
    for(int i= 0; i <x; i++){
-      hasil = hasil + total_Seluruh_Pesanan[i];
+       hasil = hasil + total_Seluruh_Pesanan[i];
  }
 
  cout << "Total Pesanan : " << hasil << endl;
